@@ -6,5 +6,5 @@ export default class Character extends Model {
   static jsonSchema = {
     type: 'object',
     required: ['name']
-  };
+  }
 }
