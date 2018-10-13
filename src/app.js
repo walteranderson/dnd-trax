@@ -6,8 +6,7 @@ import registerMiddleware from './middleware'
 import config from './config'
 
 // DB setup
-// TODO add isProd check eventually
-const knex = Knex(config.db.development)
+const knex = Knex(config.knexConfig())
 Model.knex(knex)
 
 const app = express()
