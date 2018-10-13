@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Barbarian",
+    "hit_die": 12,
+    "base_hit_points": 12
+  },
+  {
+    "name": "Bard",
+    "hit_die": 8,
+    "base_hit_points": 8
+  },
+  {
+    "name": "Cleric",
+    "hit_die": 8,
+    "base_hit_points": 8
+  },
+  {
+    "name": "Druid",
+    "hit_die": 8,
+    "base_hit_points": 8
+  },
+  {
+    "name": "Fighter",
+    "hit_die": 10,
+    "base_hit_points": 10
+  },
+  {
+    "name": "Monk",
+    "hit_die": 8,
+    "base_hit_points": 8
+  },
+  {
+    "name": "Paladin",
+    "hit_die": 10,
+    "base_hit_points": 10
+  },
+  {
+    "name": "Ranger",
+    "hit_die": 10,
+    "base_hit_points": 10
+  },
+  {
+    "name": "Rogue",
+    "hit_die": 8,
+    "base_hit_points": 9
+  },
+  {
+    "name": "Sorcerer",
+    "hit_die": 6,
+    "base_hit_points": 6
+  },
+  {
+    "name": "Warlock",
+    "hit_die": 8,
+    "base_hit_points": 8
+  },
+  {
+    "name": "Wizard",
+    "hit_die": 6,
+    "base_hit_points": 6
+  }
+]
