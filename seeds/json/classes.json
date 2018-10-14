@@ -2,61 +2,304 @@
   {
     "name": "Barbarian",
     "hit_die": 12,
-    "base_hit_points": 12
+    "base_hit_points": 12,
+    "proficiencies": [
+      "Light armor",
+      "Medium armor",
+      "Shields",
+      "Simple weapons",
+      "Martial weapons",
+      "STR",
+      "CON",
+      "Animal Handling",
+      "Athletics",
+      "Intimidation",
+      "Nature",
+      "Perception",
+      "Survival"
+    ]
   },
   {
     "name": "Bard",
     "hit_die": 8,
-    "base_hit_points": 8
+    "base_hit_points": 8,
+    "proficiencies": [
+      "Light armor",
+      "Simple weapons",
+      "Longswords",
+      "Rapiers",
+      "Shortswords",
+      "Crossbows, hand",
+      "DEX",
+      "CHA",
+      "Acrobatics",
+      "Animal Handling",
+      "Arcana",
+      "Athletics",
+      "Deception",
+      "History",
+      "Insight",
+      "Intimidation",
+      "Investigation",
+      "Medicine",
+      "Nature",
+      "Perception",
+      "Performance",
+      "Persuasion",
+      "Religion",
+      "Sleight of Hand",
+      "Stealth",
+      "Survival",
+      "Bagpipes",
+      "Drum",
+      "Dulcimer",
+      "Flute",
+      "Lute",
+      "Lyre",
+      "Horn",
+      "Pan flute",
+      "Shawm",
+      "Viol"
+    ]
   },
   {
     "name": "Cleric",
     "hit_die": 8,
-    "base_hit_points": 8
+    "base_hit_points": 8,
+    "proficiencies": [
+      "Light armor",
+      "Medium armor",
+      "Shields",
+      "Simple weapons",
+      "WIS",
+      "CHA",
+      "History",
+      "Insight",
+      "Medicine",
+      "Persuasion",
+      "Religion"
+    ]
   },
   {
     "name": "Druid",
     "hit_die": 8,
-    "base_hit_points": 8
+    "base_hit_points": 8,
+    "proficiencies": [
+      "Light armor",
+      "Medium armor",
+      "Shields",
+      "Clubs",
+      "Daggers",
+      "Javelins",
+      "Maces",
+      "Quarterstaffs",
+      "Sickles",
+      "Spears",
+      "Darts",
+      "Slings",
+      "Scimitars",
+      "Herbalism Kit",
+      "INT",
+      "WIS",
+      "Animal Handling",
+      "Arcana",
+      "Insight",
+      "Medicine",
+      "Nature",
+      "Perception",
+      "Religion",
+      "Survival"
+    ]
   },
   {
     "name": "Fighter",
     "hit_die": 10,
-    "base_hit_points": 10
+    "base_hit_points": 10,
+    "proficiencies": [
+      "All armor",
+      "Shields",
+      "Simple weapons",
+      "Martial weapons",
+      "STR",
+      "CON",
+      "Acrobatics",
+      "Animal Handling",
+      "Athletics",
+      "History",
+      "Insight",
+      "Intimidation",
+      "Perception",
+      "Survival"
+    ]
   },
   {
     "name": "Monk",
     "hit_die": 8,
-    "base_hit_points": 8
+    "base_hit_points": 8,
+    "proficiencies": [
+      "Alchemist's supplies",
+      "Brewer's supplies",
+      "Calligrapher's supplies",
+      "Carpenter's tools",
+      "Cartographer's tools",
+      "Cobbler's tools",
+      "Cook's utensils",
+      "Glassblower's tools",
+      "Jeweler's tools",
+      "Leatherworker's tools",
+      "Mason's tools",
+      "Painter's supplies",
+      "Potter's tools",
+      "Smith's tools",
+      "Tinker's tools",
+      "Weaver's tools",
+      "Woodcarver's tools",
+      "Disguise kit",
+      "Forgery kit",
+      "Bagpipes",
+      "Drum",
+      "Dulcimer",
+      "Flute",
+      "Lute",
+      "Lyre",
+      "Horn",
+      "Pan flute",
+      "Shawm",
+      "Viol",
+      "Acrobatics",
+      "Athletics",
+      "History",
+      "Insight",
+      "Religion",
+      "Stealth",
+      "Simple weapons",
+      "Shortswords",
+      "STR",
+      "DEX"
+    ]
   },
   {
     "name": "Paladin",
     "hit_die": 10,
-    "base_hit_points": 10
+    "base_hit_points": 10,
+    "proficiencies": [
+      "Athletics",
+      "Insight",
+      "Intimidation",
+      "Medicine",
+      "Persuasion",
+      "Religion",
+      "All armor",
+      "Shields",
+      "Simple weapons",
+      "Martial weapons",
+      "WIS",
+      "CHA"
+    ]
   },
   {
     "name": "Ranger",
     "hit_die": 10,
-    "base_hit_points": 10
+    "base_hit_points": 10,
+    "proficiencies": [
+      "Light armor",
+      "Medium armor",
+      "Shields",
+      "Simple weapons",
+      "Martial weapons",
+      "STR",
+      "DEX",
+      "Animal Handling",
+      "Athletics",
+      "Insight",
+      "Investigation",
+      "Nature",
+      "Perception",
+      "Stealth",
+      "Survival"
+    ]
   },
   {
     "name": "Rogue",
     "hit_die": 8,
-    "base_hit_points": 9
+    "base_hit_points": 9,
+    "proficiencies": [
+      "Light armor",
+      "Simple weapons",
+      "Longswords",
+      "Rapiers",
+      "Shortswords",
+      "Crossbows, hand",
+      "Thieves' Tools",
+      "DEX",
+      "INT",
+      "Acrobatics",
+      "Athletics",
+      "Deception",
+      "Insight",
+      "Intimidation",
+      "Investigation",
+      "Perception",
+      "Performance",
+      "Persuasion",
+      "Sleight of Hand",
+      "Stealth"
+    ]
   },
   {
     "name": "Sorcerer",
     "hit_die": 6,
-    "base_hit_points": 6
+    "base_hit_points": 6,
+    "proficiencies": [
+      "Daggers",
+      "Quarterstaffs",
+      "Darts",
+      "Slings",
+      "CON",
+      "CHA",
+      "Arcana",
+      "Deception",
+      "Insight",
+      "Intimidation",
+      "Persuasion",
+      "Religion"
+    ]
   },
   {
     "name": "Warlock",
     "hit_die": 8,
-    "base_hit_points": 8
+    "base_hit_points": 8,
+    "proficiencies": [
+      "Light armor",
+      "Simple weapons",
+      "WIS",
+      "CHA",
+      "Arcana",
+      "Deception",
+      "History",
+      "Intimidation",
+      "Investigation",
+      "Nature",
+      "Religion"
+    ]
   },
   {
     "name": "Wizard",
     "hit_die": 6,
-    "base_hit_points": 6
+    "base_hit_points": 6,
+    "proficiencies": [
+      "Daggers",
+      "Quarterstaffs",
+      "Darts",
+      "Slings",
+      "INT",
+      "WIS",
+      "Arcana",
+      "History",
+      "Insight",
+      "Investigation",
+      "Medicine",
+      "Religion"
+    ]
   }
 ]

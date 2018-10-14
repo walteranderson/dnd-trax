@@ -4,7 +4,7 @@ exports.seed = knex => {
   return knex(TABLE_NAME).truncate()
     .then(() => {
       return knex(TABLE_NAME).insert([
-        { name: 'Light Armor' },
+        { name: 'Armor' },
         { name: 'Weapons' },
         { name: "Artisan's Tools" },
         { name: 'Gaming Sets' },
