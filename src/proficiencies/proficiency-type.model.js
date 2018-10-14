@@ -1,17 +1,16 @@
 import { Model } from 'objection'
-import Proficiency from './proficiency.model'
 
 
 export default class ProficiencyType extends Model {
   static tableName = 'proficiency_types'
 
   static relationMappings = {
-    classes: {
+    proficiencies: {
       relation: Model.HasManyRelation,
-      modelClass: Proficiency,
+      modelClass: `${__dirname}/proficiency.model`,
       join: {
-        from: 'proficiency_types.id'
-        to: 'proficiencies.type_id',
+        from: 'proficiency_types.id',
+        to: 'proficiencies.type_id'
       }
     }
   }

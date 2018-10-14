@@ -1,6 +1,5 @@
 import { Model } from 'objection'
-import Class from '../classes/class.model'
-import ProficiencyType from './proficiency-type.model'
+import path from 'path'
 
 
 export default class Proficiency extends Model {
@@ -9,19 +8,19 @@ export default class Proficiency extends Model {
   static relationMappings = {
     classes: {
       relation: Model.ManyToManyRelation,
-      modelClass: Class,
+      modelClass: path.resolve(__dirname, '../classes/class.model'),
       join: {
-        from: 'proficiencies.id'
+        from: 'proficiencies.id',
         through: {
-          from: 'classes_proficiencies.proficiency_id'
+          from: 'classes_proficiencies.proficiency_id',
           to: 'classes_proficiencies.class_id',
         },
-        to: 'classes.id',
+        to: 'classes.id'
       }
     },
     type: {
       relation: Model.BelongsToOneRelation,
-      modelClass: ProficiencyType,
+      modelClass: `${__dirname}/proficiency-type.model`,
       join: {
         from: 'proficiencies.type_id',
         to: 'proficiency_types.id'

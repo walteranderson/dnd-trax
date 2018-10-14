@@ -1,5 +1,5 @@
 import { Model } from 'objection'
-import Proficiency from '../proficiencies/proficiency.model'
+import path from 'path'
 
 export default class Class extends Model {
   static tableName = 'classes'
@@ -17,14 +17,14 @@ export default class Class extends Model {
   static relationMappings = {
     proficiencies: {
       relation: Model.ManyToManyRelation,
-      modelClass: Proficiency,
+      modelClass: path.resolve(__dirname, '../proficiencies/proficiency.model'),
       join: {
         from: 'classes.id',
         through: {
           from: 'classes_proficiencies.class_id',
           to: 'classes_proficiencies.proficiency_id'
         },
-        to: 'proficiencies.id''
+        to: 'proficiencies.id'
       }
     }
   }
