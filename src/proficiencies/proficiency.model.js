@@ -27,4 +27,27 @@ export default class Proficiency extends Model {
       }
     }
   }
+
+  static get modifiers () {
+    return {
+      filterArmor: typeFilter('Armor'),
+      filterWeapons: typeFilter('Weapons'),
+      filterSavingThrows: typeFilter('Saving Throws'),
+      filterSkills: typeFilter('Skills'),
+      filterOther: typeFilter('Other')
+    }
+  }
+}
+
+/**
+ * Returns a modifier function to apply
+ * a filter based on the proficiency type.
+ *
+ * @param  {String} name
+ * @return {Function}
+ */
+function typeFilter(name) {
+  return builder => {
+    return builder.joinRelation('type').where('type.name', name)
+  }
 }

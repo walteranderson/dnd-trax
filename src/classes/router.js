@@ -20,7 +20,12 @@ router.get('/classes/:id', async (req, res) => {
     const klass = await Class
       .query()
       .findById(req.params.id)
-      // .eager('proficiencies.type(skills) as skills')
+      .eager(`[
+        proficiencies(filterArmor) as armor,
+        proficiencies(filterWeapons) as weapons,
+        proficiencies(filterSavingThrows) as savingThrows,
+        proficiencies(filterSkills) as skills
+      ]`)
 
     res.send(klass)
   } catch (err) {

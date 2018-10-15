@@ -13,6 +13,4 @@ const app = express()
 
 registerMiddleware(app)
 
-// TODO: add an error catching middleware
-
 export default app

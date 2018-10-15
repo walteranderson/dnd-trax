@@ -1,6 +1,5 @@
 import { Model } from 'objection'
 
-
 export default class ProficiencyType extends Model {
   static tableName = 'proficiency_types'
 
