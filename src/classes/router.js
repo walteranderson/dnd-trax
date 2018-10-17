@@ -1,37 +1,26 @@
-import { Router } from 'express'
+import Router from 'express-promise-router'
 import Class from './class.model'
 
 const router = Router()
 
 router.get('/classes', async (req, res) => {
-  try {
-    const classes = await Class
-      .query()
-      .eager('[proficiencies.[type]]')
+  const classes = await Class.query()
 
-    res.send(classes)
-  } catch(err) {
-    console.error(err)
-  }
+  res.send(classes)
 })
 
 router.get('/classes/:id', async (req, res) => {
-  try {
-    const klass = await Class
-      .query()
-      .findById(req.params.id)
-      .eager(`[
-        proficiencies(filterArmor) as armor,
-        proficiencies(filterWeapons) as weapons,
-        proficiencies(filterSavingThrows) as savingThrows,
-        proficiencies(filterSkills) as skills
-      ]`)
+  const klass = await Class.query()
+    .findById(req.params.id)
+    .throwIfNotFound()
+    .eager(`[
+      proficiencies(filterArmor) as armor,
+      proficiencies(filterWeapons) as weapons,
+      proficiencies(filterSavingThrows) as savingThrows,
+      proficiencies(filterSkills) as skills
+    ]`)
 
-    res.send(klass)
-  } catch (err) {
-    console.error(err)
-    res.sendStatus(500)
-  }
+  res.send(klass)
 })
 
 export default router

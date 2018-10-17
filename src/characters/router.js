@@ -1,17 +1,12 @@
-import { Router } from 'express'
+import Router from 'express-promise-router'
 import Character from './character.model'
 
 const router = Router()
 
 router.get('/characters', async (req, res) => {
-  try {
-    const characters = await Character.query()
+  const characters = await Character.query()
 
-    res.send(characters)
-  } catch (err) {
-    console.error(err)
-    res.sendStatus(500)
-  }
+  res.send(characters)
 })
 
 export default router

@@ -1,6 +1,7 @@
 import morgan from 'morgan'
 import bodyParser from 'body-parser'
 
+import errorHandler from './error-handler'
 import charactersRouter from '../characters/router'
 import classesRouter from '../classes/router'
 
@@ -12,5 +13,5 @@ export default function registerMiddleware(app) {
   app.use('/api', charactersRouter)
   app.use('/api', classesRouter)
 
-  // TODO: add an error catching middleware
+  app.use(errorHandler)
 }
