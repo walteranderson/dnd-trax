@@ -30,11 +30,11 @@ export default class Proficiency extends Model {
 
   static get modifiers () {
     return {
-      filterArmor: typeFilter('Armor'),
-      filterWeapons: typeFilter('Weapons'),
-      filterSavingThrows: typeFilter('Saving Throws'),
-      filterSkills: typeFilter('Skills'),
-      filterOther: typeFilter('Other')
+      armor: typeFilter('Armor'),
+      weapons: typeFilter('Weapons'),
+      savingThrows: typeFilter('Saving Throws'),
+      skills: typeFilter('Skills'),
+      other: typeFilter('Other')
     }
   }
 }

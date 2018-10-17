@@ -5,6 +5,12 @@ const router = Router()
 
 router.get('/classes', async (req, res) => {
   const classes = await Class.query()
+    .eager(`[
+      proficiencies(armor) as armor,
+      proficiencies(weapons) as weapons,
+      proficiencies(savingThrows) as savingThrows,
+      proficiencies(skills) as skills
+    ]`)
 
   res.send(classes)
 })
@@ -14,10 +20,10 @@ router.get('/classes/:id', async (req, res) => {
     .findById(req.params.id)
     .throwIfNotFound()
     .eager(`[
-      proficiencies(filterArmor) as armor,
-      proficiencies(filterWeapons) as weapons,
-      proficiencies(filterSavingThrows) as savingThrows,
-      proficiencies(filterSkills) as skills
+      proficiencies(armor) as armor,
+      proficiencies(weapons) as weapons,
+      proficiencies(savingThrows) as savingThrows,
+      proficiencies(skills) as skills
     ]`)
 
   res.send(klass)
