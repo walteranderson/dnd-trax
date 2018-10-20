@@ -7,10 +7,10 @@ exports.seed = knex => {
     .then(() => knex('classes_proficiencies').truncate())
     .then(() => {
       const data = json.map(
-        ({ name, hit_die, base_hit_points }) => ({
+        ({ name, hit_die, base_health }) => ({
             name,
             hit_die,
-            base_hit_points
+            base_health
         })
       )
 

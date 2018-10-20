@@ -10,7 +10,7 @@ export default class Class extends Model {
       id: { type: 'integer' },
       name: { type: 'string' },
       hit_die: { type: 'integer' },
-      base_hit_points: { type: 'integer' }, // or base_health?
+      base_health: { type: 'integer' }
     }
   }
 

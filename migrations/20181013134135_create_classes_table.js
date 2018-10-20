@@ -5,7 +5,7 @@ exports.up = knex => {
       table.increments('id')
       table.string('name')
       table.integer('hit_die')
-      table.integer('base_hit_points')
+      table.integer('base_health')
     })
 }
 

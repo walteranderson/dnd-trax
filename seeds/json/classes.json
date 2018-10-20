@@ -2,7 +2,7 @@
   {
     "name": "Barbarian",
     "hit_die": 12,
-    "base_hit_points": 12,
+    "base_health": 12,
     "proficiencies": [
       "Light armor",
       "Medium armor",
@@ -22,7 +22,7 @@
   {
     "name": "Bard",
     "hit_die": 8,
-    "base_hit_points": 8,
+    "base_health": 8,
     "proficiencies": [
       "Light armor",
       "Simple weapons",
@@ -65,7 +65,7 @@
   {
     "name": "Cleric",
     "hit_die": 8,
-    "base_hit_points": 8,
+    "base_health": 8,
     "proficiencies": [
       "Light armor",
       "Medium armor",
@@ -83,7 +83,7 @@
   {
     "name": "Druid",
     "hit_die": 8,
-    "base_hit_points": 8,
+    "base_health": 8,
     "proficiencies": [
       "Light armor",
       "Medium armor",
@@ -114,7 +114,7 @@
   {
     "name": "Fighter",
     "hit_die": 10,
-    "base_hit_points": 10,
+    "base_health": 10,
     "proficiencies": [
       "All armor",
       "Shields",
@@ -135,7 +135,7 @@
   {
     "name": "Monk",
     "hit_die": 8,
-    "base_hit_points": 8,
+    "base_health": 8,
     "proficiencies": [
       "Alchemist's supplies",
       "Brewer's supplies",
@@ -181,7 +181,7 @@
   {
     "name": "Paladin",
     "hit_die": 10,
-    "base_hit_points": 10,
+    "base_health": 10,
     "proficiencies": [
       "Athletics",
       "Insight",
@@ -200,7 +200,7 @@
   {
     "name": "Ranger",
     "hit_die": 10,
-    "base_hit_points": 10,
+    "base_health": 10,
     "proficiencies": [
       "Light armor",
       "Medium armor",
@@ -222,7 +222,7 @@
   {
     "name": "Rogue",
     "hit_die": 8,
-    "base_hit_points": 9,
+    "base_health": 9,
     "proficiencies": [
       "Light armor",
       "Simple weapons",
@@ -249,7 +249,7 @@
   {
     "name": "Sorcerer",
     "hit_die": 6,
-    "base_hit_points": 6,
+    "base_health": 6,
     "proficiencies": [
       "Daggers",
       "Quarterstaffs",
@@ -268,7 +268,7 @@
   {
     "name": "Warlock",
     "hit_die": 8,
-    "base_hit_points": 8,
+    "base_health": 8,
     "proficiencies": [
       "Light armor",
       "Simple weapons",
@@ -286,7 +286,7 @@
   {
     "name": "Wizard",
     "hit_die": 6,
-    "base_hit_points": 6,
+    "base_health": 6,
     "proficiencies": [
       "Daggers",
       "Quarterstaffs",
