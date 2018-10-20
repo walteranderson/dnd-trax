@@ -25,7 +25,6 @@ exports.seed = knex => {
      *
      * Don't look too closely :)
      */
-    .then(() => knex(TABLE_NAME).pluck('id'))
     .then(() => {
       return Promise.all([
         knex(TABLE_NAME).pluck('id'),
