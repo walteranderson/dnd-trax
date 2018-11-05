@@ -8,7 +8,7 @@ app.listen(config.server.port, config.server.ip, err => {
   }
 
   console.log(
-    'server is listening on http://' +
+    'Server is listening on http://' +
     config.server.ip + ':' + config.server.port
   )
 })

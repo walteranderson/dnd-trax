@@ -1,5 +1,10 @@
 export default {
   env: process.env.NODE_ENV || 'development',
+
+  isProduction () {
+    return this.env === 'production'
+  },
+
   server: {
     ip: process.env.SERVER_IP || '127.0.0.1',
     port: process.env.SERVER_PORT || 3000

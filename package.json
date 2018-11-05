@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "start": "nf start dev",
+    "start": "nf start api,web",
     "db:init": "knex migrate:latest && knex seed:run",
     "lint": "standard src/*.js --fix"
   },
