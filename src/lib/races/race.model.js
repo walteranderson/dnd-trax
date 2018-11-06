@@ -5,7 +5,7 @@ export default class Race extends Model {
 
   static relationMapping = {
     subraces: {
-      relation: Model.HasManyRelation
+      relation: Model.HasManyRelation,
       modelClass: `${__dirname}/subrace.model`,
       join: {
         from: 'races.id',
