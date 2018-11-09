@@ -1,107 +1,1311 @@
 [
   {
     "name": "Dwarf",
-    "speed": 30,
+    "speed": 25,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 2,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
     "age": "Dwarves mature at the same rate as humans, but they’re considered young until they reach the age of 50. On average, they live about 350 years.",
     "size": "Medium",
     "size_description": "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.",
     "alignment": "Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Dwarven Resilience",
+        "description": "You have advantage on saving throws against poison, and you have resistance against poison damage (explained in the “Combat” section)."
+      },
+      {
+        "title": "Dwarven Combat Training",
+        "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer."
+      },
+      {
+        "title": "Tool Proficiency",
+        "description": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+      },
+      {
+        "title": "Stonecunning",
+        "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Dwarvish"
+    ],
     "subraces": [
       {
         "name": "Hill Dwarf",
-        "description": "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."
+        "description": "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience. The gold dwarves of Faerûn in their mighty southern kingdom are hill dwarves, as are the exiled Neidar and the debased Klar of Krynn in the Dragonlance setting.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 1,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Dwarven Toughness",
+            "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+          }
+        ]
       },
       {
         "name": "Mountain Dwarf",
-        "description": "As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You're probably on the tall side (for a dwarf), and tend toward lighter coloration."
+        "description": "As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain. You’re probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern Faerûn, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.",
+        "ability_score_increase": [
+          {
+            "STR": 2,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Dwarven Armor Training",
+            "description": "You have proficiency with light and medium armor"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Elf",
     "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 2,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
     "age": "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old.",
     "size": "Medium",
     "size_description": "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium.",
     "alignment": "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others’ freedom as well as their own, and they are more often good than not. The drow are an exception; their exile has made them vicious and dangerous. Drow are more often evil than not.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Keen Senses",
+        "description": "You have proficiency in the Perception skill."
+      },
+      {
+        "title": "Fey Ancestry",
+        "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep."
+      },
+      {
+        "title": "Trance",
+        "description": "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Elvish"
+    ],
     "subraces": [
       {
         "name": "High Elf",
-        "description": "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races."
+        "description": "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 1,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Elf Weapon Training",
+            "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+          },
+          {
+            "title": "Extra Language",
+            "description": "You can speak, read, and write one extra language of your choice."
+          },
+          {
+            "title": "Cantrip",
+            "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
+          }
+        ]
+      },
+      {
+        "name": "Wood Elf",
+        "description": "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. This category includes the wild elves (grugach) of Greyhawk and the Kagonesti of Dragonlance, as well as the races called wood elves in Greyhawk and the Forgotten Realms. In Faerûn, wood elves (also called wild elves, green elves, or forest elves) are reclusive and distrusting of non-elves. Wood elves’ skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper-colored. Their eyes are green, brown, or hazel.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 1,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Elf Weapon Training",
+            "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+          },
+          {
+            "title": "Fleet of Foot",
+            "description": "Your base walking speed increases to 35 feet."
+          },
+          {
+            "title": "Mask of the Wild",
+            "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+          }
+        ]
+      },
+      {
+        "name": "Dark Elf (Drow)",
+        "description": "Descended from an earlier subrace of dark-skinned elves, the drow were banished from the surface world for following the goddess Lolth down the path to evil and corruption. Now they have built their own civilization in the depths of the Underdark, patterned after the Way of Lolth. Also called dark elves, the drow have black skin that resembles polished obsidian and stark white or pale yellow hair. They commonly have bery pale eyes (so pale as to be mistaken for white) in shades of lilac, silver, pink, red, and blue. They tend to be smaler and thinner than most elves. Drow adventurers are rare, and the race does not exist in all worlds. Check with your Dungeon Master to see if you can play a drow character",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 1
+          }
+        ],
+        "traits": [
+          {
+            "title": "Superior Darkvision",
+            "description": "Your darkvision has a radius of 120 feet."
+          },
+          {
+            "title": "Sunlight Sensitivity",
+            "description": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+          },
+          {
+            "title": "Drow Magic",
+            "description": "You know the *dancing lights* cantrip. When you reach 3rd level, you can cast the *faerie fire* spell once per day. When you reach 5th level, you can also cast the *darkness* spell once per day. Charisma is your spellcasting ability for these spells."
+          },
+          {
+            "title": "Drow Weapon Training",
+            "description": "You have proficiency with rapiers, shortswords, and hand crossbows."
+          }
+        ]
       }
     ]
   },
   {
     "name": "Halfling",
     "speed": 25,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 2,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
     "age": "A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.",
     "size": "Small",
     "size_description": "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
     "alignment": "Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways.",
+    "traits": [
+      {
+        "title": "Lucky",
+        "description": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+      },
+      {
+        "title": "Brave",
+        "description": "You have advantage on saving throws against being frightened."
+      },
+      {
+        "title": "Halfling Nimbleness",
+        "description": "You can move through the space of any creature that is of a size larger than yours."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Halfling"
+    ],
     "subraces": [
       {
         "name": "Lightfoot Halfling",
-        "description": "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life."
+        "description": "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others. In the Forgotten Realms, lightfoot halflings have spread the farthest and thus are the most common variety. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life. In the world of Greyhawk, these halflings are called hairfeet or tallfellows.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 1
+          }
+        ],
+        "traits": [
+          {
+            "title": "Naturally Stealthy",
+            "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+          }
+        ]
+      },
+      {
+        "name": "Stout Halfling",
+        "description": "As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they’re most common in the south.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 1,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Stout Resilience",
+            "description": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+          }
+        ]
       }
     ]
   },
   {
     "name": "Human",
     "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 1,
+        "DEX": 1,
+        "CON": 1,
+        "INT": 1,
+        "WIS": 1,
+        "CHA": 1
+      }
+    ],
     "age": "Humans reach adulthood in their late teens and live less than a century.",
     "size": "Medium",
     "size_description": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
     "alignment": "Humans tend toward no particular alignment. The best and the worst are found among them.",
+    "traits": [],
+    "languages": [
+      "Common",
+      "One Extra Language"
+    ],
     "subraces": []
   },
   {
     "name": "Dragonborn",
     "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 2,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 1
+      }
+    ],
     "age": "Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.",
     "size": "Medium",
     "size_description": "Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.",
     "alignment": " Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil. Most dragonborn are good, but those who side with evil can be terrible villains.",
+    "traits": [
+      {
+        "title": "Breath Weapon",
+        "description": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest."
+      },
+      {
+        "title": "Damage Resistance",
+        "description": "You have resistance to the damage type associated with your draconic ancestry."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Draconic"
+    ],
     "subraces": []
   },
   {
     "name": "Gnome",
     "speed": 25,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 2,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
     "age": " Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years.",
     "size": "Small",
     "size_description": "Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small.",
     "alignment": "Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious.",
+    "traits": [
+      {
+        "title": "Gnome Cunning",
+        "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+      },
+      {
+        "title": "Darkvision",
+        "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Gnomish"
+    ],
     "subraces": [
       {
         "name": "Rock Gnome",
-        "description": "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes."
+        "description": "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 1,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Artificer's Lore",
+            "description": "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+          },
+          {
+            "title": "Tinker",
+            "description": "You have proficiency with artisan’s tools (tinker’s tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options: Clockwork Toy. This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents. Fire Starter. The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.Music Box. When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed."
+          }
+        ]
+      },
+      {
+        "name": "Forest Gnome",
+        "description": "As a forest gnome, you have a natural knack for illusion and inherent quickness and stealth. In the worlds of D&D, forest gnomes are rare and secretive. They gather in hidden communities in sylvan forests, using illusions and trickery to conceal themselves from threats or to mask their escape should they be detected. Forest gnomes tend to be friendly with other good-spirited woodland folk, and they regard elves and good fey as their most important allies. These gnomes also befriend small forest animals and rely on them for information about threats that might prowl their lands.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 1,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Natural Illusionist",
+            "description": "You know the *minor illusion* cantrip. Intelligence is your spellcasting ability for it."
+          },
+          {
+            "title": "Speak with Small Beasts",
+            "description": "Through sounds and gestures you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
+          }
+        ]
+      },
+      {
+        "name": "Deep Gnome",
+        "description": "Forest gnomes and rock gnomes are the gnomes most commonly encountered in the lands of the surface world. There is another subrace of gnomes rarely seen by any surface-dweller: deep gnomes, also known as svirfneblin. Guarded, and suspicious of outsiders, svirfneblin are cunning and taciturn, but can be just as kind-hearted, loyal, and compassionate as their surface cousins.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 1,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Superior Darkvision",
+            "description": "Your darkvision has a radius of 120 feet."
+          },
+          {
+            "title": "Stone Camouflage",
+            "description": "You have advantage on Dexterity (stealth) checks to hide in rocky terrain"
+          },
+          {
+            "title": "Language",
+            "description": "You know the undercommon language"
+          }
+        ]
       }
     ]
   },
   {
     "name": "Half-Elf",
     "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 2
+      }
+    ],
     "age": "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years.",
     "size": "Medium",
     "size_description": "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.",
     "alignment": "Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable.",
+    "traits": [
+      {
+        "title": "Ability score increase",
+        "description": "Increase two ability scores by 1"
+      },
+      {
+        "title": "Darkvision",
+        "description": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Fey Ancestry",
+        "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep."
+      },
+      {
+        "title": "Skill Versatility",
+        "description": "You gain proficiency in two skills of your choice."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Elvish"
+    ],
     "subraces": []
   },
   {
     "name": "Half-Orc",
     "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 2,
+        "DEX": 0,
+        "CON": 1,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
     "age": "Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years.",
     "size": "Medium",
     "size_description": "Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium.",
     "alignment": " Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Menacing",
+        "description": "You gain proficiency in the Intimidation skill."
+      },
+      {
+        "title": "Relentless Endurance",
+        "description": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest."
+      },
+      {
+        "title": "Savage Attacks",
+        "description": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Orc"
+    ],
     "subraces": []
   },
   {
     "name": "Tiefling",
     "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 1,
+        "WIS": 0,
+        "CHA": 2
+      }
+    ],
     "age": "Tieflings mature at the same rate as humans but live a few years longer.",
     "size": "Medium",
     "size_description": "Tieflings are about the same size and build as humans. Your size is Medium.",
     "alignment": "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.."
+      },
+      {
+        "title": "Hellish Resistance",
+        "description": "You have resistance to fire damage."
+      },
+      {
+        "title": "Infernal Legacy",
+        "description": "You know the *thaumaturgy* cantrip. When you reach 3rd level, you can cast the *hellish rebuke* spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the *darkness* spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Infernal"
+    ],
     "subraces": []
+  },
+  {
+    "name": "Aasimar",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 2
+      }
+    ],
+    "age": "Aasimar mature at the same rate as humans, but they van live up to 160 years.",
+    "size": "Medium",
+    "size_description": "Aasimar have the same range of height and weight as humans. Your size is Medium.",
+    "alignment": "Imbued with celestial power, most aasimar are good. Outcast aasimar are most often neutral or even evil.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "Blessed with a radiant soul, your vision can easily cut through the darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Celestial Resistance",
+        "description": "You have resistance to necrotic damage and radiant damage"
+      },
+      {
+        "title": "Healing Hands",
+        "description": "As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest."
+      },
+      {
+        "title": "Light Bearer",
+        "description": "You know the *light* cantrip. Charisma is your spellcasting ability for it."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Celestial"
+    ],
+    "subraces": [
+      {
+        "name": "Protector Aasimar",
+        "description": "Protector aasimar are charged by the powers of good to guard the weak, to strike at evil wherever it arises, and to stand vigilant against the darkness. From a young age, a protector aasimar receives advice and directives that urge to stand against evil.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 1,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Radiant Soul",
+            "description": "Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or spell. The extra radiant damage equals your level. Once you use this trait, you can't use it again until you finish a long rest."
+          }
+        ]
+      },
+      {
+        "name": "Scourge Aasimar",
+        "description": "Scourge aasimar are imbued with a divine energy that blazes intensely within them. It feeds a powerful desire to destroy evil - a desire that is, at its best, unflinching and, at its worst, all-consuming. Many scourge aasimar wear masks to block out the world and focus on containing this power, unmasking themselves only in battle.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 1,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Radiant Consumption",
+            "description": "Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level. Once you use this trait, you can't use it again until you finish a long rest."
+          }
+        ]
+      },
+      {
+        "name": "Fallen Aasimar",
+        "description": "An aasimar who was touched by dark powers as a youth or who turns to evil in early adulthood can become one of the fallen-a group of aasimar whose inner light has been replaced by shadow.",
+        "ability_score_increase": [
+          {
+            "STR": 1,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Necrotic Shroud",
+            "description": "Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back.The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level. Once you use this trait, you can't use it again until you finish a long rest"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Firbolg",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 1,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 2,
+        "CHA": 0
+      }
+    ],
+    "age": "As humanoids related to the fey, firbolg have long lifespans. A firbolg reaches adulthood around 30, and the oldest of them can live for 500 years.",
+    "size": "Medium",
+    "size_description": "Firbolg are between 7 and 8 feet tall and weigh between 240 and 300 pounds. Your size is Medium",
+    "alignment": "As people who follow the rhythm of nature and see themselves as its caretakers, firbolg are typically neutral good. Evil firbolg are rare and are usually the sworn enemies of the rest of their kind.",
+    "traits": [
+      {
+        "title": "Firbolg Magic",
+        "description": "You can cast *detect magic* and *disguise self* with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves."
+      },
+      {
+        "title": "Hidden Step",
+        "description": "As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest."
+      },
+      {
+        "title": "Powerful Build",
+        "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+      },
+      {
+        "title": "Speech of Beast and Leaf",
+        "description": "You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Elvish",
+      "Giant"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Goliath",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 2,
+        "DEX": 0,
+        "CON": 1,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
+    "age": "Goliaths have lifespans comparable to humans. They enter adulthood in their late teens and usually live less than a century.",
+    "size": "Medium",
+    "size_description": "Goliaths are between 7 and 8 feet tall and weigh between 280 and 340 pounds. Your size is Medium.",
+    "alignment": "Goliath society, with its clear roles and tasks, has a strong lawful bent. The goliath sense of fairness, balanced with an emphasis on selfsufficiency and personal accountability, pushes them toward neutrality.",
+    "traits": [
+      {
+        "title": "Powerful Build",
+        "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+      },
+      {
+        "title": "Mountain Born",
+        "description": "You’re acclimated to high altitude, including elevations above 20,000 feet. You’re also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master’s Guide."
+      },
+      {
+        "title": "Natural Athlete",
+        "description": "You have proficiency in the Athletics skill."
+      },
+      {
+        "title": "Stone's Endurance",
+        "description": "You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Giant"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Kenku",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 2,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 1,
+        "CHA": 0
+      }
+    ],
+    "age": "Kenku have shorter lifespans than humans. They reach maturity at about 12 years old and can live to 60",
+    "size": "Medium",
+    "size_description": "Kenku are around 5 feet tall and weigh between 90 and 120 pounds. Your size is Medium.",
+    "alignment": "Kenku are chaotic creatures, rarely making enduring commitments, and they care mostly for preserving their own hides. They are generally chaotic neutral in outlook.",
+    "traits": [
+      {
+        "title": "Expert Forgery",
+        "description": "You can duplicate other creatures' handwriting and craftwork. You have advantage on all checks made to produce forgeries or duplicates of existing objects."
+      },
+      {
+        "title": "Kenku Training",
+        "description": "You are proficient in your choice of two of the following skills: Acrobatics, Deception, Stealth, and Sleight of Hand."
+      },
+      {
+        "title": "Mimicry",
+        "description": "You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Auran"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Lizardfolk",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 2,
+        "INT": 0,
+        "WIS": 1,
+        "CHA": 0
+      }
+    ],
+    "age": "Lizardfolk reach maturity around age 14 and rarely live longer than 60 years",
+    "size": "Medium",
+    "size_description": "Lizardfolk are a little bulkier and taller than humans, and their colorful frills make them appear even larger. Your size is Medium.",
+    "alignment": "Most lizardfolk are neutral. They see the world as a place of predators and prey, where life and death are natural processes. They wish only to survive, and prefer to leave other creatures to their own devices.",
+    "traits": [
+      {
+        "title": "Bite",
+        "description": "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "title": "Cunning Artisan",
+        "description": "As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items: a shield, a club, a javelin, or 1d4 darts or blowgun needles. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as leatherworker's tools."
+      },
+      {
+        "title": "Hold Breath",
+        "description": "You can hold your breath for up to 15 minutes at a time"
+      },
+      {
+        "title": "Hunter's Lore",
+        "description": "You gain proficiency with two of the following skills of your choice: Animal Handling, Nature, Perception, Stealth, and Survival."
+      },
+      {
+        "title": "Natural Armor",
+        "description": "You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+      },
+      {
+        "title": "Hungry Jaws",
+        "description": "In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit points (minimum of 1) equal to your Constitution modifier, and you can't use this trait again until you finish a short or long rest."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Draconic"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Tabaxi",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 2,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 1
+      }
+    ],
+    "age": "Tabaxi have lifespans equivalent to humans.",
+    "size": "Medium",
+    "size_description": "Tabaxi are taller on average than humans and relatively slender. Your size is Medium.",
+    "alignment": "Tabaxi tend toward chaotic alignments, as they let impulse and fancy guide their decisions. They are rarely evil, with most of them driven by curiosity rather than greed or other dark impulses.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Feline Agility",
+        "description": "Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+      },
+      {
+        "title": "Cat's Claws",
+        "description": "Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "title": "Cat's Talent",
+        "description": "You have proficiency in the Perception and Stealth skills"
+      }
+    ],
+    "languages": [
+      "Common",
+      "One other language"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Triton",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 1,
+        "DEX": 0,
+        "CON": 1,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 1
+      }
+    ],
+    "age": "Tritons reach maturity around age 15 and can live up to 200 years.",
+    "size": "Medium",
+    "size_description": "Tritons are slightly shorter than humans, averaging about 5 feet tall. Your size is Medium.",
+    "alignment": "Tritons tend toward lawful good. As guardians of the darkest reaches of the sea, their culture pushes them toward order and benevolence.",
+    "traits": [
+      {
+        "title": "Swimmer",
+        "description": "You have a swimming speed of 30 feet."
+      },
+      {
+        "title": "Control Air and Water",
+        "description": "A child of the sea, you can call on the magic of elemental air and water. You can cast *fog cloud* with this trait. Starting at 3rd level, you can cast *gust of wind* with it, and starting at 5th level, you can also cast *wall of water* with it (see the spell at the bottom). Once you cast a spell with this trait, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+      },
+      {
+        "title": "Emissary of the sea",
+        "description": "Aquatic beasts have an extraordinary affinity with your people. You can communicate simple ideas with beasts that can breathe water. They can understand the meaning of your words, though you have no special ability to understand them in return."
+      },
+      {
+        "title": "Guardian of the Depths",
+        "description": "Adapted to even the most extreme ocean depths, you have resistance to cold damage, and you ignore any of the drawbacks caused by a deep, underwater environment."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Primordial"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Bugbear",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 2,
+        "DEX": 1,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
+    "age": "Bugbears reach adulthood at age 16 and live up to 80 years.",
+    "size": "Medium",
+    "size_description": "Bugbears are between 6 and 8 feet tall and weigh between 250 and 350 pounds. Your size is Medium.",
+    "alignment": "Bugbears endure a harsh existence that demands each of them to remain self-sufficient, even at the expense of their fellows. They tend to be chaotic evil.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Long Limbed",
+        "description": "When you make a melee attack on your turn, your reach for it is 5 feet greater than normal."
+      },
+      {
+        "title": "Powerful Build",
+        "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+      },
+      {
+        "title": "Sneaky",
+        "description": "You are proficient in the Stealth skill."
+      },
+      {
+        "title": "Surprise Attack",
+        "description": "If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Goblin"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Goblin",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 2,
+        "CON": 1,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
+    "age": "Goblins reach adulthood at age 8 and live up to 60 years.",
+    "size": "Small",
+    "size_description": "Goblins are between 3 and 4 feet tall and weigh between 40 and 80 pounds. Your size is Small.",
+    "alignment": "Goblins are typically neutral evil, as they care only for their own needs. A few goblins might tend toward good or neutrality, but only rarely.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Fury of the Small",
+        "description": "When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest."
+      },
+      {
+        "title": "Nimble Escape",
+        "description": "You can take the Disengage or Hide action as a bonus action on each of your turns."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Goblin"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Hobgoblin",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 2,
+        "INT": 1,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
+    "age": "Hobgoblins mature at the same rate as humans and have lifespans similar in length to theirs.",
+    "size": "Medium",
+    "size_description": "Hobgoblins are between 5 and 6 feet tall and weigh between 150 and 200 pounds. Your size is Medium.",
+    "alignment": "Hobgoblin society is built on fidelity to a rigid, unforgiving code of conduct. As such, they tend toward lawful evil.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Martial Training",
+        "description": "You are proficient with two martial weapons of your choice and with light armor."
+      },
+      {
+        "title": "Saving Face",
+        "description": "Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Goblin"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Kobold",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": -2,
+        "DEX": 2,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
+    "age": "Kobolds reach adulthood at age 6 and can live up to 120 years but rarely do so.",
+    "size": "Small",
+    "size_description": "Kobolds are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small.",
+    "alignment": "Kobolds are fundamentally selfish, making them evil, but their reliance on the strength of their group makes them trend toward law.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Grovel, Cower, and Beg",
+        "description": "As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that can see you. Once you use this trait, you can't use it again until you finish a short or long rest."
+      },
+      {
+        "title": "Pack Tactics",
+        "description": "You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated."
+      },
+      {
+        "title": "Sunlight Sensitivity",
+        "description": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Draconic"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Orc",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 2,
+        "DEX": 0,
+        "CON": 1,
+        "INT": -2,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
+    "age": "Orcs reach adulthood at age 12 and live up to 50 years.",
+    "size": "Medium",
+    "size_description": "Orcs are usually over 6 feet tall and weigh between 230 and 280 pounds. Your size is Medium.",
+    "alignment": "Orcs are vicious raiders, who believe that the world should be theirs. They also respect strength above all else and believe the strong must bully the weak to ensure that weakness does not spread like a disease. They are usually chaotic evil.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Agressive",
+        "description": "As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started."
+      },
+      {
+        "title": "Menacing",
+        "description": "You are trained in the Intimidation skill."
+      },
+      {
+        "title": "Powerful Build",
+        "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Orc"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Yuan-Ti Pureblood",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 1,
+        "WIS": 0,
+        "CHA": 2
+      }
+    ],
+    "age": "Purebloods mature at the same rate as humans and have lifespans similar in length to theirs.",
+    "size": "Medium",
+    "size_description": "Purebloods match humans in average size and weight. Your size is Medium.",
+    "alignment": "Purebloods are devoid of emotion and see others as tools to manipulate. They care little for law or chaos and are typically neutral evil.",
+    "traits": [
+      {
+        "title": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "title": "Innate Spellcasting",
+        "description": "You know the *poison spray* cantrip. You can cast *animal friendship* an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast *suggestion* with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+      },
+      {
+        "title": "Magic Resistance",
+        "description": "You have advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "title": "Poison Immunity",
+        "description": "You are immune to poison damage and the poisoned condition."
+      }
+    ],
+    "languages": [
+      "Common",
+      "Abyssal",
+      "Draconic"
+    ],
+    "subraces": []
+  },
+  {
+    "name": "Genasi",
+    "speed": 30,
+    "ability_score_increase": [
+      {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 2,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    ],
+    "age": "Genasi mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years.",
+    "size": "Medium",
+    "size_description": "Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium.",
+    "alignment": "Independent and self-reliant, genasi tend toward a neutral alignment.",
+    "traits": [],
+    "languages": [
+      "Common",
+      "Primordial"
+    ],
+    "subraces": [
+      {
+        "name": "Air Genasi",
+        "description": "As an air genasi, you are descended from the djinn. As changeable as the weather, your moods shift from calm to wild and violent with little warning, but these storms rarely last long. Air genasi typically have light blue skin, hair, and eyes. A faint but constant breeze accompanies them, tousling the hair and stirring the clothing. Some air genasi speak with breathy voices, marked by a faint echo. A few display odd patterns in their flesh or grow crystals from their scalps.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 1,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Unending Breath",
+            "description": "You can hold your breath indefinitely while you’re not incapacitated."
+          },
+          {
+            "title": "Mingle with the Wind",
+            "description": "You can cast the *levitate* spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+          }
+        ]
+      },
+      {
+        "name": "Earth Genasi",
+        "description": "As an earth genasi, you are descended from the cruel and greedy dao, though you aren’t necessarily evil. You have inherited some measure of control over earth, reveling in superior strength and solid power. You tend to avoid rash decisions, pausing long enough to consider your options before taking action. Elemental earth manifests differently from one individual to the next. Some earth genasi always have bits of dust falling from their bodies and mud clinging to their clothes, never getting clean no matter how often they bathe. Others are as shiny and polished as gemstones, with skin tones of deep brown or black, eyes sparkling like agates. Earth genasi can also have smooth metallic flesh, dull iron skin spotted with rust, a pebbled and rough hide, or even a coating of tiny embedded crystals. The most arresting have fissures in their flesh, from which faint light shines.",
+        "ability_score_increase": [
+          {
+            "STR": 1,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Earth Walk",
+            "description": "You can move across difficult terrain made of earth or stone without expending extra movement."
+          },
+          {
+            "title": "Merge with Stone",
+            "description": "You can cast the *pass without trace* spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+          }
+        ]
+      },
+      {
+        "name": "Fire Genasi",
+        "description": "As a fire genasi, you have inherited the volatile mood and keen mind of the efreet. You tend toward impatience and making snap judgments. Rather than hide your distinctive appearance, you exult in it. Nearly all fire genasi are feverishly hot as if burning inside, an impression reinforced by flaming red, coal- black, or ash-gray skin tones. The more human-looking have fiery red hair that writhes under extreme emotion, while more exotic specimens sport actual flames dancing on their heads. Fire genasi voices might sound like crackling flames, and their eyes flare when angered. Some are accompanied by the faint scent of brimstone.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 1,
+            "WIS": 0,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Darkvision",
+            "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see in darkness is in a shade of red."
+          },
+          {
+            "title": "Fire Resistance",
+            "description": "You have resistance to fire damage."
+          },
+          {
+            "title": "Reach to the Blaze",
+            "description": "You know the *produce flame* cantrip. Once you reach 3rd level, you can cast the *burning hands* spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+          }
+        ]
+      },
+      {
+        "name": "Water Genasi",
+        "description": "The lapping of waves, the spray of sea foam on the wind, the ocean depths—all of these things call to your heart. You wander freely and take pride in your independence, though others might consider you selfish. Most water genasi look as if they just finished bathing, with beads of moisture collecting on their skin and hair. They smell of fresh rain and clean water. Blue or green skin is common, and most have somewhat overlarge eyes, blue-black in color. A water genasi’s hair might float freely, swaying and waving as if underwater. Some have voices with undertones reminiscent of whale song or trickling streams.",
+        "ability_score_increase": [
+          {
+            "STR": 0,
+            "DEX": 0,
+            "CON": 0,
+            "INT": 0,
+            "WIS": 1,
+            "CHA": 0
+          }
+        ],
+        "traits": [
+          {
+            "title": "Acid Resistance",
+            "description": "You have resistance to acid damage"
+          },
+          {
+            "title": "Amphibious",
+            "description": "You can breathe air and water"
+          },
+          {
+            "title": "Swim",
+            "description": "You have a swimming speed of 30 feet."
+          },
+          {
+            "title": "Call to the Wave",
+            "description": "You know the *shape water* cantrip. When you reach 3rd level, you can cast the *create or destroy water* spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+          }
+        ]
+      }
+    ]
   }
 ]
